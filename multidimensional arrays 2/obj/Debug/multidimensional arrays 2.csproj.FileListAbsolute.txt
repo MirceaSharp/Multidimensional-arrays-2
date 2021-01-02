@@ -1,0 +1,11 @@
+C:\Users\mirce\source\repos\multidimensional arrays 2\multidimensional arrays 2\bin\Debug\multidimensional arrays 2.exe.config
+C:\Users\mirce\source\repos\multidimensional arrays 2\multidimensional arrays 2\bin\Debug\multidimensional arrays 2.exe
+C:\Users\mirce\source\repos\multidimensional arrays 2\multidimensional arrays 2\bin\Debug\multidimensional arrays 2.pdb
+C:\Users\mirce\source\repos\multidimensional arrays 2\multidimensional arrays 2\obj\Debug\multidimensional arrays 2.csprojAssemblyReference.cache
+C:\Users\mirce\source\repos\multidimensional arrays 2\multidimensional arrays 2\obj\Debug\multidimensional_arrays_2.Array.resources
+C:\Users\mirce\source\repos\multidimensional arrays 2\multidimensional arrays 2\obj\Debug\multidimensional_arrays_2.Login.resources
+C:\Users\mirce\source\repos\multidimensional arrays 2\multidimensional arrays 2\obj\Debug\multidimensional_arrays_2.Properties.Resources.resources
+C:\Users\mirce\source\repos\multidimensional arrays 2\multidimensional arrays 2\obj\Debug\multidimensional arrays 2.csproj.GenerateResource.cache
+C:\Users\mirce\source\repos\multidimensional arrays 2\multidimensional arrays 2\obj\Debug\multidimensional arrays 2.csproj.CoreCompileInputs.cache
+C:\Users\mirce\source\repos\multidimensional arrays 2\multidimensional arrays 2\obj\Debug\multidimensional arrays 2.exe
+C:\Users\mirce\source\repos\multidimensional arrays 2\multidimensional arrays 2\obj\Debug\multidimensional arrays 2.pdb
