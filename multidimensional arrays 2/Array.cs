@@ -65,34 +65,27 @@ namespace multidimensional_arrays_2
         private int GetMinimumValue()
         {
 
+                var Minimum = 0D;
+                Minimum = myarray[0, 0];
 
-            //{// array gets de value thats on 0
-            //    int Min = myarray[0,0].Min(); 
-            //    foreach (int number in myarray)
-            //    {// if the number is smaller then 0.
-            //        if (number < Min)
-            //        {// zero is the new number
-            //            Min = number;
-            //        }
+                
 
-            //    }
-            //    return Min;
+                
+
+                for (int i = 0; i < 10; i++)
+                {
+                    for (int j = 0; j < 4; j++)
+                    {
+                        if (Minimum > myarray[i, j])
+                            Minimum = myarray[i, j];
+                    }
+                }
+
+            return Convert.ToInt32(Minimum);
 
 
-
-
-                //int min = myarray[0, 0];
-                //foreach (int x in myarray) if (x < min) min = x;
-
-                //int resultaat = 0;
-                //for (int i = 0; i < myarray.GetLength(0); i++)
-                //    for (int j = 0; j < myarray.GetLength(1); j++)
-                //        if (myarray[i, j] == min)
-                //            resultaat = j + 1; /*+= String.Format("The smallest number is {0}. This can be found on row {1} in column {2}" + Environment.NewLine, min, j + 1, i + 1);*/
-                //return resultaat;
-
-            }
-
+           
         }
     }
 }
+
