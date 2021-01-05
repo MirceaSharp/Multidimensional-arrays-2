@@ -12,10 +12,22 @@ namespace multidimensional_arrays_2
 {
     public partial class Array : Form
     {
-        int[,] myarray = new int[10, 7];
+        private int[,] myarray = new int[10, 7];
+        Random myrandom = new Random();
+
+
+
+
+
+
         public Array()
         {
+
+
             InitializeComponent();
+
+
+
         }
 
         private void btnPrint_Click(object sender, EventArgs e)
@@ -36,17 +48,25 @@ namespace multidimensional_arrays_2
 
                 printArray(myarray);
 
+               
+
+
+
+
+
 
 
             }
-
-
         }
+
+
 
         private void txtResult_TextChanged(object sender, EventArgs e)
         {
 
         }
+
+
 
         private void printArray(int[,] arrayToPrint)
         {
@@ -60,32 +80,54 @@ namespace multidimensional_arrays_2
 
 
                 }
+
             }
         }
+
         private int GetMinimumValue()
         {
 
-                var Minimum = 0D;
-                Minimum = myarray[0, 0];
+            for (int i = 0; i < 10; i++)
+            {
 
-                
 
-                
+                myarray[i, 0] = myrandom.Next(0, 100);
+                myarray[i, 1] = myrandom.Next(0, 100);
+                myarray[i, 2] = myrandom.Next(0, 100);
+                myarray[i, 3] = myrandom.Next(0, 100);
 
-                for (int i = 0; i < 10; i++)
+
+            }
+
+            int numOfRows = myarray.GetLength(0);
+            int numOfColumns = myarray.GetLength(1);
+
+            int lowest = myarray[0, 0];
+            int highest = myarray[0, 0];
+
+            for (int i = 0; i < numOfRows; i++)
+            {
+                for (int c = 0; c < numOfColumns; c++)
                 {
-                    for (int j = 0; j < 4; j++)
-                    {
-                        if (Minimum > myarray[i, j])
-                            Minimum = myarray[i, j];
-                    }
+                    int number = myarray[0,0];
+
+                    if (number < lowest)
+
+
+                        lowest = number;
+                    
                 }
 
-            return Convert.ToInt32(Minimum);
+            }
 
+            return lowest;
 
-           
         }
     }
 }
+
+
+
+
+
 
