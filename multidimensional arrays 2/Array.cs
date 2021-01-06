@@ -14,7 +14,8 @@ namespace multidimensional_arrays_2
     {
         private int[,] myarray = new int[10, 7];
         Random myrandom = new Random();
-
+        int r;
+        int c;
 
 
 
@@ -26,14 +27,33 @@ namespace multidimensional_arrays_2
 
             InitializeComponent();
 
+            int numOfRows = 10;  /* myarray.GetLength(0);*/
+            int numOfColumns = 4;  /* myarray.GetLength(1);*/
 
+            int lowest = myarray[0, 0];
+            int highest = myarray[0, 0];
+
+            for (int r = 0; r < numOfRows; r++)
+            {
+                for (int c = 0; c < numOfColumns; c++)
+                {
+
+
+                    if (myarray[r, c] > highest)
+
+
+                        highest = myarray[r, c];
+
+                }
+
+            }
 
         }
 
         private void btnPrint_Click(object sender, EventArgs e)
         {
             Random myrandom = new Random();
-            myrandom.Next(0, 100);
+           
             int[,] myarray = new int[10, 7];
 
             for (int i = 0; i < 10; i++)
@@ -42,16 +62,20 @@ namespace multidimensional_arrays_2
                 myarray[i, 1] = myrandom.Next(0, 100);
                 myarray[i, 2] = myrandom.Next(0, 100);
                 myarray[i, 3] = myrandom.Next(0, 100);
-                myarray[i, 4] = GetMinimumValue();
+                
                 myarray[i, 5] = myarray[i, 0] + myarray[i, 1] + myarray[i, 2] + myarray[i, 3];
                 myarray[i, 6] = myarray[i, 5] / 4;
 
                 printArray(myarray);
 
+
                
 
+                myarray[i, 4] = myarray[r, c];
 
+                
 
+               
 
 
 
@@ -84,47 +108,16 @@ namespace multidimensional_arrays_2
             }
         }
 
-        private int GetMinimumValue()
-        {
+        //private int GetMinimumValue()
+        //{
 
-            for (int i = 0; i < 10; i++)
-            {
+          
 
-
-                myarray[i, 0] = myrandom.Next(0, 100);
-                myarray[i, 1] = myrandom.Next(0, 100);
-                myarray[i, 2] = myrandom.Next(0, 100);
-                myarray[i, 3] = myrandom.Next(0, 100);
-
-
-            }
-
-            int numOfRows = myarray.GetLength(0);
-            int numOfColumns = myarray.GetLength(1);
-
-            int lowest = myarray[0, 0];
-            int highest = myarray[0, 0];
-
-            for (int i = 0; i < numOfRows; i++)
-            {
-                for (int c = 0; c < numOfColumns; c++)
-                {
-                    int number = myarray[0,0];
-
-                    if (number < lowest)
-
-
-                        lowest = number;
-                    
-                }
-
-            }
-
-            return lowest;
+            //return highest;
 
         }
     }
-}
+
 
 
 
