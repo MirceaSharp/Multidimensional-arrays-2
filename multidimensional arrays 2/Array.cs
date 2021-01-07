@@ -12,6 +12,8 @@ namespace multidimensional_arrays_2
 {
     public partial class Array : Form
     {
+
+
         private int[,] myarray = new int[10, 7];
         Random myrandom = new Random();
         int r;
@@ -19,13 +21,11 @@ namespace multidimensional_arrays_2
 
 
 
-
-
         public Array()
         {
 
 
-            InitializeComponent();
+        InitializeComponent();
 
             int numOfRows = 10;  /* myarray.GetLength(0);*/
             int numOfColumns = 4;  /* myarray.GetLength(1);*/
@@ -54,7 +54,7 @@ namespace multidimensional_arrays_2
         {
             Random myrandom = new Random();
            
-            int[,] myarray = new int[10, 7];
+            //int[,] myarray = new int[10, 7];
 
             for (int i = 0; i < 10; i++)
             {
